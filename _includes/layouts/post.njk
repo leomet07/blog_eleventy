@@ -3,5 +3,10 @@ layout: layouts/base.njk
 ---
 
 <h1>TITLE: {{ title }}</h1>
-
+{% if date %}
+    <p><time class="post-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time></p>
+{% else %}
+    {# <p><time class="post-date" datetime="{{ (new Date()) | htmlDateString }}">{{ date | readableDate }}</time></p> #}
+    <span>No date specified</span>
+{% endif %}
 {{ content | safe }}
