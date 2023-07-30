@@ -55,3 +55,7 @@ a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
 }
+
+li {
+	list-style-position: inside;
+}
