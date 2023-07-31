@@ -2,7 +2,15 @@
 layout: layouts/base.njk
 ---
 
-<h1>TITLE: {{ title }}</h1>
-<p><time class="post-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time></p>
+<section>
+    <h1>TITLE: {{ title }}</h1>
+    
+    {% if description %}
+        <h2>{{ description }}</h2>
+    {% endif %}
+
+    <p><time class="post-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time></p>
+</section>
+
 
 {{ content | safe }}
