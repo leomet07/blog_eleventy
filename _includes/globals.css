@@ -5,34 +5,25 @@
 }
 
 :root {
-	--primary-color: #333;
-	--background-color: white;
+	--text: #f8f8fc;
+	--background: #120e25;
+	--primary: #cba2dd;
+	--secondary: #df78a6;
+	--accent: #bd4ca6;
 
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050f;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--primary-color: #dad8d8;
-		--background-color: #15202b;
-
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
-	}
+	--text-color-link: #1493fb;
+	--text-color-link-active: #6969f7;
+	--text-color-link-visited: #a6a6f8;
 }
 
 body {
-	color: var(--primary-color);
+	color: var(--text);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	background-color: var(--background-color);
+	background-color: var(--background);
 }
 
 #main_content {
-	outline: 1px solid grey;
 	width: 98%;
 	max-width: 1000px;
 	margin-inline: auto;
@@ -46,14 +37,13 @@ h1 {
 }
 
 a[href] {
-	color: var(--text-color-link);
+	color: var(--accent);
 }
-a[href]:visited {
-	color: var(--text-color-link-visited);
-}
+
 a[href]:hover,
 a[href]:active {
-	color: var(--text-color-link-active);
+	background-color: var(--accent);
+	color: var(--text);
 }
 
 li {
