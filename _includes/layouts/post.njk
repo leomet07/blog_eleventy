@@ -2,6 +2,12 @@
 layout: layouts/base.njk
 ---
 
+{% set postcss %} {% include "post.css" %} {% endset %}
+<style>
+	{{ postcss | cssmin | safe }}
+</style>
+
+
 <section>
     <h1>TITLE: {{ title }}</h1>
     
