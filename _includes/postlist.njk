@@ -1,8 +1,17 @@
+<!-- capture the CSS content as a Nunjucks variable -->
+{% set postlistcss %} {% include "postlist.css" %} {% endset %}
+<!-- feed it through our cssmin filter to minify -->
+<style>
+	{{ postlistcss | cssmin | safe }}
+</style>
+
 <ol reversed class="postlist">
 {% for post in postlist | reverse %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		<a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-		<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+		<div>
+			<h2><a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h2>
+			<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+		</div>
 	</li>
 {% endfor %}
 </ol>

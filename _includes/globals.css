@@ -47,5 +47,5 @@ a[href]:active {
 }
 
 li {
-	list-style-position: inside;
+	list-style-type: none;
 }
