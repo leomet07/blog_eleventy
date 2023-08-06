@@ -9,14 +9,14 @@
 			content="{{ description or metadata.description }}"
 		/>
 		<!-- capture the CSS content as a Nunjucks variable -->
-		{% set css %} {% include "globals.css" %} {% endset %}
+		{% set css %} {% include "styles/globals.css" %} {% endset %}
 		<!-- feed it through our cssmin filter to minify -->
 		<style>
 			{{ css | cssmin | safe }}
 		</style>
 	</head>
 	<body>
-		{% include "navbar.njk" %}
+		{% include "components/navbar.njk" %}
 		<main id="main_content">
 			{{ content | safe }}
 		</main>

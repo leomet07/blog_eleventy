@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 
-{% set postcss %} {% include "post.css" %} {% endset %}
+{% set postcss %} {% include "styles/post.css" %} {% endset %}
 <style>
 	{{ postcss | cssmin | safe }}
 </style>
