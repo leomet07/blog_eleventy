@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
 			month: "long",
 			day: "numeric",
 		};
-		
+
 		// TODO: USE PRETTIER DATE FORMAT
 		return dateObj.toLocaleDateString("en-us", {
 			timeZone: "utc",
@@ -26,7 +26,9 @@ module.exports = function (eleventyConfig) {
 
 		// Use utc tz so that no tz conversion occurs
 		// Convert to YYYY/MM/DD, then replace forward slashes with dashes to return YYYY-MM-DD
-		return dateObj.toLocaleDateString("en-ZA", { timezone: "utc" }).replace(/\//g, "-");
+		return dateObj
+			.toLocaleDateString("en-ZA", { timezone: "utc" })
+			.replace(/\//g, "-");
 	});
 
 	return {
