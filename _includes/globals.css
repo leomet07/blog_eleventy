@@ -32,10 +32,6 @@ body {
 	padding-bottom: 10px;
 }
 
-h1 {
-	text-align: center;
-}
-
 a[href] {
 	color: var(--accent);
 }
@@ -48,4 +44,9 @@ a[href]:active {
 
 li {
 	list-style-type: none;
+}
+
+#home_page_title{
+	text-align: center;
+	margin-bottom: 10px;
 }
