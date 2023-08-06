@@ -2,10 +2,10 @@ section {
 	margin-bottom: 15px;
 }
 
-article {
+article, #bottom_link {
 	font-size: 1.15rem;
 }
 
-article * {
+article *, #bottom_link {
 	margin-block: 1rem;
 }
