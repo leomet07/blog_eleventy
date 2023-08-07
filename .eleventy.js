@@ -7,17 +7,17 @@ module.exports = function (eleventyConfig) {
 		return new CleanCSS({}).minify(code).styles;
 	});
 
-	// Filters
+	// Filters, custom functions to use in njk templates
 	eleventyConfig.addFilter("readableDate", (dateObj) => {
 		dateObj ??= new Date(); // if null or undefined, then create new obj with current time
 
+		// Options so date looks like "August 6, 2023"
 		const dateOptions = {
 			year: "numeric",
 			month: "long",
 			day: "numeric",
 		};
 
-		// TODO: USE PRETTIER DATE FORMAT
 		return dateObj.toLocaleDateString("en-us", {
 			timeZone: "utc",
 			...dateOptions,
