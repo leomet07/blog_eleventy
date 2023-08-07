@@ -1,6 +1,6 @@
 module.exports = {
 	title: "Lenny's Blog",
-	url: "https://lenny-blog.netlify.app/",
+	url: "https://blog.lennym.dev/",
 	language: "en",
 	description: "Active learner with work across the board.",
 	author: {
