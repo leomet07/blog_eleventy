@@ -1,4 +1,4 @@
-@import url("fonts/inter/inter.css");
+@import url("/fonts/inter/inter.css");
 
 * {
 	box-sizing: border-box;
@@ -20,7 +20,7 @@
 
 body {
 	color: var(--text);
-	font-family: 'Inter', sans-serif;
+	font-family: "Inter", sans-serif;
 	font-size: 16px;
 	background-color: var(--background);
 }
@@ -48,7 +48,7 @@ li {
 	list-style-type: none;
 }
 
-#home_page_title{
+#home_page_title {
 	text-align: center;
 	margin-bottom: 10px;
 }
