@@ -4,7 +4,7 @@ description: Car-dependent Montauk was a fun visit for one day, but with some no
 date: 2023-08-06
 ---
 
-#### Note: I mentioned "strong" towns often. A strong town refers to a town that is safe, livable, and financially sustainable achieved by means of an active local community and local planning decisions that benefit people and not exclusively cars. Learn more about strong towns through [strongtowns.org](https://www.strongtowns.org/), a wonderful organization and thorogh resource about the places we live in.
+#### Note: I mention "strong" towns often. A strong town refers to a town that is safe, livable, and financially sustainable achieved by means of an active local community and local planning decisions that benefit people and not exclusively cars. Learn more about strong towns through [strongtowns.org](https://www.strongtowns.org/), a wonderful organization and thorogh resource about the places we live in.
 
 Montauk is known for being a cute coastal town with some beautiful beaches, and when it was portrayed in [*Eternal Sunshine of the Spotless Mind*](https://www.imdb.com/title/tt0338013/), it was "cast" as just that. As a kid, I've always thought of Montauk differently though, often marveling as how far it is from NYC on the LIRR map. Now after my day trip to Montauk, I've seen what Montauk really is -- a once successful small town that has been destroyed by a lifestyle, or [what I call a "cancer"](https://stuyspec.com/article/cars-are-the-cancer-of-america), that has been taken to a uniquely American scale.
 
